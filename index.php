@@ -41,7 +41,7 @@ get_header();
             </div>
         </header>
         <!-- start content -->
-        <section class="portofolio w-full pt-16 flex justify-center items-center flex-wrap">
+        <section class="portofolio w-full pt-4 lg:pt-16 flex justify-center items-center flex-wrap">
             <div class="masonry w-full lg:px-6">
                 <div class="masonry-item" v-for="(item, key) in listData" :key="key">
                     <div class="cursor-pointer overflow-hidden" @click="showPreview = true, activeImg = key"><img :src="item.src" :alt="item" class="masonry-content" alt="img"></div>

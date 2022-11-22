@@ -27,6 +27,10 @@ new Vue({
                 return 'editorial'
             } else if(lastSegment.includes("sketchbook")) {
                 return 'sketchbook'
+            } else if(lastSegment.includes("illustrations")) {
+                return 'illustrations'
+            } else if(lastSegment.includes("about")) {
+                return 'about'
             } else {
                 return 'illustrations'
             }

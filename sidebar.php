@@ -28,16 +28,16 @@
 				</a>
 				<div class="sidebar__menu mt-8">
 					<div class="mb-4">
-						<a href="<?= home_url() ?>" class="no-underline font-bold">illustrations</a>
+						<a href="<?= home_url() ?>" class="no-underline font-bold" :class="{ 'active' : getSlug === 'illustrations' }">illustrations</a>
 					</div>
 					<div class="mb-4">
-						<a href="<?php echo get_post_type_archive_link('editorial'); ?>" class="no-underline font-bold">editorial</a>
+						<a href="<?php echo get_post_type_archive_link('editorial'); ?>" class="no-underline font-bold" :class="{ 'active' : getSlug === 'editorial' }">editorial</a>
 					</div>
 					<div class="mb-4">
-						<a href="<?php echo get_post_type_archive_link('sketchbook'); ?>" class="no-underline font-bold">sketchbook</a>
+						<a href="<?php echo get_post_type_archive_link('sketchbook'); ?>" class="no-underline font-bold" :class="{ 'active' : getSlug === 'sketchbook' }">sketchbook</a>
 					</div>
 					<div class="mb-4">
-						<a href="<?= home_url() . '/about' ?>" class="no-underline font-bold">about</a>
+						<a href="<?= home_url() . '/about' ?>" class="no-underline font-bold" :class="{ 'active' : getSlug === 'about' }">about</a>
 					</div>
 				</div>
 			</div>

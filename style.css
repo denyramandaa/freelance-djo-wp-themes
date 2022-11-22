@@ -453,6 +453,15 @@ a {
     margin: 0 auto;
     /* background-color: rgb(255 255 255 / 85%); */
 }
+.preview--text h1, 
+.preview--text h2, 
+.preview--text h3, 
+.preview--text h4, 
+.preview--text h5, 
+.preview--text h6{
+	font-weight: bold;
+    font-size: 20px;
+}
 .preview.editorial .preview__editorial {
     overflow-y: scroll;
     justify-content: start;

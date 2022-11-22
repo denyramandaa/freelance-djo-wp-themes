@@ -41,7 +41,7 @@ get_header();
             </div>
         </header>
         <!-- start content -->
-        <section class="portofolio w-full pt-16 flex justify-center items-center flex-wrap">
+        <section class="portofolio w-full pt-4 lg:pt-16 flex justify-center items-center flex-wrap">
             <div class="contact__info">
                 <div class="contact__info--content mb-8 mr-0 lg:mr-8">
                     <h2>Hello! I’m Maria Karina Putri.</h2>

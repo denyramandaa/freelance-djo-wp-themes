@@ -41,7 +41,7 @@ get_header();
             </div>
         </header>
         <!-- start content -->
-        <section class="portofolio w-full pt-16 flex justify-center items-center flex-wrap">
+        <section class="portofolio w-full pt-4 lg:pt-16 flex justify-center items-center flex-wrap">
             <div class="masonry w-full lg:px-6">
                 <div class="masonry-item" v-for="(item, key) in listData" :key="key">
                     <div class="cursor-pointer overflow-hidden" @click="showPreview = true, activeImg = key"><img :src="item.src" :alt="item" class="masonry-content" alt="img"></div>
@@ -54,7 +54,7 @@ get_header();
                     <div class="py-16 relative w-full flex flex-col justify-center items-center preview__editorial">
                         <div class="preview--overlay absolute left-0 top-0 w-full h-full" @click="showPreview = false"></div>
                         <img class="preview--img relative mx-auto" :src="listData[activeImg].src" alt="img">
-                        <p class="preview--text" v-if="listData[activeImg].text">{{ listData[activeImg].text }}</p>
+                        <div class="preview--text" v-if="listData[activeImg].text" v-html="listData[activeImg].text"></div>
                         <div v-if="activeImg > 0" class="preview__navigation preview__navigation--prev" @click="activeImg--">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/arr-left.png" alt="prev">
                         </div>

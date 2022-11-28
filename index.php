@@ -53,7 +53,7 @@ get_header();
                 <div class="preview__inner relative w-full h-full flex flex-col justify-center items-center">
                     <div class="preview--overlay absolute left-0 top-0 w-full h-full" @click="showPreview = false"></div>
                     <img class="preview--img relative" :src="listData[activeImg].src" alt="img">
-                    <!-- <p class="preview--text" v-if="listData[activeImg].text">{{ listData[activeImg].text }}</p> -->
+                    <p class="preview--text" v-if="listData[activeImg].text">{{ listData[activeImg].text }}</p>
                     <div v-if="activeImg > 0" class="preview__navigation preview__navigation--prev" @click="activeImg--">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/arr-left.png" alt="prev">
                     </div>

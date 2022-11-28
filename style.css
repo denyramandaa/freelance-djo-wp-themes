@@ -462,6 +462,26 @@ a {
 	font-weight: bold;
     font-size: 20px;
 }
+.preview--text ul, .preview--text ol {
+	list-style: decimal;
+}
+.preview--text blockquote {
+	text-align: center;
+    margin: 40px auto;
+    position: relative;
+    max-width: 70%;
+}
+.preview--text blockquote::before {
+	content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-100%);
+    background-image: url('assets/images/quote.png');
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+}
 .preview.editorial .preview__editorial {
     overflow-y: scroll;
     justify-content: start;
